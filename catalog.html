@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="main-menu">
+        <div class="logo">
+          <a class="logo-name" href="index.html">ТЕХНОМАРТ</a>
+        </div>
+        <div class="block-search">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" placeholder="Поиск">
+            </input>
+          </form>
+        </div>
+        <div class="block-bookmark">
+          <a href="#">Закладки</a>
+        </div>
+        <div class="block-basket">
+          <a href="#">Корзина:</a>
+        </div>
+        <div class="block-make-order">
+          <a href="#">Оформить заказ</a>
+        </div>
+      </div>
+      <div class="shop">
+        <section class="about-shop">
+          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        </section>
+        <section class="shop-contacts">
+          <img src="" alt="Телефон">
+          <span>+7 (812) 555-05-55</span> г. Санкт-Петербург, ул. Б. Конюшенная, д. 9/18
+        </section>
+        <section class="user-block">
+          <div class="user-name">
+            <img src="" alt="Это вы">
+            <span>Равшан Джамшутович</span>
+            <a class="logout" href="">
+              <img src="" alt="Выход">
+            </a>
+          </div>
+          <a class="user" href="#">Мои заказы</a>
+          <a class="user" href="#">Личный Кабинет</a>
+        </section>
+      </div>
+
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="catalog">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html"><img src=""></a>
+        <a href="#">Каталог</a>
+        <a href="#">Инструмент</a>
+        <a>Перфораторы</a>
+        <h1>Перфораторы</h1>
+      </div>
+
+      <aside class="filter">
+        <span>Фильтр:</span>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Цена:</legend>
+            /*Ползунок совсем не помню, хочу еще раз пройти курс*/
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <label for="Bosch">
+              <input id="Bosch" type="checkbox" name="Bosch" checked>
+                Bosch
+            </label>
+            <label for="Interskol">
+              <input id="Interskol" type="checkbox" name="Interskol">
+                Интерскол
+            </label>
+            <label for="Makita">
+              <input id="Makita" type="checkbox" name="Makita" checked>
+                Makita
+            </label>
+            <label for="Dewalt">
+              <input id="Dewalt" type="checkbox" name="Dewalt">
+                Dewalt
+            </label>
+            <label for="Hitachi">
+              <input id="Hitachi" type="checkbox" name="Hitachi">
+                Hitachi
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <label for="battery">
+              <input id="battery" type="radio" name="groups" value="battery" checked>
+                Аккумуляторные
+            </label>
+            <label for="grid">
+              <input id="grid" type="radio" name="groups" value="grid">
+                Сетевые
+            </label>
+          </fieldset>
+        </form>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h3>Техномарт</h3>
+        </div>
+        <ul>
+          <li><a class="footer-top-info" href="#">Компания</a></li>
+          <li><a class="footer-top-info" href="#">Новости</a></li>
+          <li><a class="footer-top-info" href="#">Каталог</a></li>
+          <li><a class="footer-top-info" href="#">Доставка</a></li>
+          <li><a class="footer-top-info" href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <p>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 9/18 +7 (812) 555-05-55
+        </p>
+        <ul>
+          <li><a class="footer-menu" href="#">Материалы</a></li>
+          <li><a class="footer-menu" href="#">Техника</a></li>
+          <li><a class="footer-menu" href="#">Инструмент</a></li>
+          <li><a class="footer-menu" href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          2010-2017 Компания "Техномарт" Все права защищены
+        </p>
+        <div class="footer-social">
+          <a class="social-btn" href="#">Вконтакте</a>
+          <a class="social-btn" href="#">Фейсбук</a>
+          <a class="social-btn" href="#">Инстаграм</a>
+        </div>
+        <ul>
+          <li>Обратная связь:<a class="footer-bottom-info" href="#">mail@htmlacademy.ru</a></li>
+          <li>Разработано -<a class="footer-bottom-info" href="#">htmlacademy.ru</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
