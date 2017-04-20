@@ -15,7 +15,7 @@
           <a class="logo-name">ТЕХНОМАРТ</a>
           <div class="block-search">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
-              <button type="submit"><img src="" alt=""></button>
+              <button type="submit"></button>
               <input type="search" placeholder="Поиск"></input>
             </form>
           </div>
@@ -94,24 +94,24 @@
             <h2>Доставка</h2>
             <a class="banner-btn" href="#">Бесплатно</a>
           </div>
-          <div class="gallery-top">
-            <div class="gallery-top-style">
-              <!-- насчет класса сомневаюсь -->
-              <div class="gallery-content">
-                <h1>Перфораторы</h1>
+
+          <div class="slider">
+            <input type="radio" id="prev" name="prev">
+            <input type="radio" id="next" name="next">
+            <div class="gallery-controls">
+              <label for="prev"></label>
+              <label for="next"></label>
+            </div>
+            <div class="slider-slides">
+              <div class="slider-slide">
+                <h2>Перфораторы</h2>
                 <p>Настоящие мужские игрушки</p>
                 <a class="btn" href="catalog.html">Открыть каталог</a>
               </div>
-              <div class="gallery-content">
-                <h1>Дрели</h1>
+              <div class="slider-slide">
+                <h2>Дрели</h2>
                 <p>Соседям на радость!</p>
                 <a class="btn" href="catalog.html">Открыть каталог</a>
-              </div>
-              <input type="radio" id="prev" name="prev">
-              <input type="radio" id="next" name="next">
-              <div class="gallery-controls">
-                <label for="prev"></label>
-                <label for="next"></label>
               </div>
             </div>
           </div>
@@ -205,30 +205,43 @@
 
       <div class="block-service">
         <div class="container">
-          <div class="gallery-bottom">
-            <h2>Сервисы</h2>
-            <p>
-              Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать все покупки приятными.
-            </p>
-            <div class="gallery-bottom-style">
-              <div class="gallery-content">
-                <button class="btn gallery-prev" type="button">Доставка</button>
-                <button class="btn gallery-middle" type="button">Гарантия</button>
-                <button class="btn gallery-next" type="button">Кредит</button>
-                <img src="http://placehold.it/150x100" width="286" height="164" alt="Доставка">
+          <h2>Сервисы</h2>
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать все покупки приятными.
+          </p>
+          <div class="service-slider">
+            <input type="radio" id="shipping" name="shipping"></input>
+            <input type="radio" id="guarantee" name="guarantee"></input>
+            <input type="radio" id="credit" name="credit"></input>
+            <div class="service-slider-controls">
+              <label for="shipping"></label>
+              <label for="guarantee"></label>
+              <label for="credit"></label>
+            </div>
+            <div class="service-slider-slides">
+              <div class="service-slider-slide">
+                <h2>Доставка</h2>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
+                  поднимая его на этаж!
+                </p>
               </div>
-              <div class="gallery-content">
-                <button class="btn gallery-prev" type="button">Доставка</button>
-                <button class="btn gallery-middle" type="button">Гарантия</button>
-                <button class="btn gallery-next" type="button">Кредит</button>
-                <img src="http://placehold.it/150x100" width="286" height="164" alt="Гарантия">
+              <div class="service-slider-slide">
+                <h2>Гарантии</h2>
+                <p>
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгоранием, вы всегда сможете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
               </div>
-              <div class="gallery-content">
-                <button class="btn gallery-prev" type="button">Доставка</button>
-                <button class="btn gallery-middle" type="button">Гарантия</button>
-                <button class="btn gallery-next" type="button">Кредит</button>
-                <img src="http://placehold.it/150x100" width="286" height="164" alt="кредит">
-                <a class="credit-btn" href="#">Отправить заявку</a>
+              <div class="service-slider-slide">
+                <h2>Кредит</h2>
+                <p>
+                  Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="btn-credit">Отправить заявку</a>
               </div>
             </div>
           </div>
@@ -323,9 +336,9 @@
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </section>
-          <section class="footer-mail">
+          <section class="footer-feedback">
             <p>Обратная связь:</p>
-            <a class="footer-bottom-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="footer-bottom-feedback" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
           <section class="footer-copyright">
             <p>Разработано -</p>
