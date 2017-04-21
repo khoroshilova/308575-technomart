@@ -1,0 +1,19 @@
+body {
+  font-family: "Cuprum","Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.category {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.popular {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
