@@ -6,14 +6,357 @@ body {
   color: #000000;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /* убрать */
+  outline: 2px solid red;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.main-menu {
+  min-height: 42px;
+  /* убрать */
+  outline: 2px solid green;
+}
+
+.header-logo {
+  float:left;
+  width: 220px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.block-search {
+  float: left;
+  width: 220px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.top-menu {
+  float: right;
+  width: 460px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.shop-info {
+  /* убрать */
+  outline: 2px solid green;
+}
+
+.about-shop {
+  float: left;
+  width: 300px;
+  min-height: 158px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.shop-contacts {
+  float: left;
+  width: 300px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.user-block {
+  float: right;
+  width: 300px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.main-navigation {
+  width: 940px;
+  min-height: 60px;
+  margin: 0 auto;
+  padding: 0 10px 60px 10px;
+  /* убрать */
+  outline: 2px solid red;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.main-content {
+  margin-bottom: 45px;
+}
+
+.promo-block {
+  margin-bottom: 50px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.promo-row-title {
+  margin-bottom: 20px;
+  font-size: 0;
+  /* убрать */
+  outline: 2px solid blue;
+}
+
+.banner-row {
+  display: inline-block;
+  width: 300px;
+  min-height: 122px;
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.banner-row:last-child {
+  margin-right: 0;
+}
+
+.promo-row-column {
+  /* убрать */
+  outline: 2px solid blue;
+}
+
+.promo-column-left {
+  float: left;
+  width: 620px;
+  min-height: 266px;
+}
+
+.banner-column {
+  float: right;
+  width: 300px;
+  min-height: 122px;
+  margin-bottom: 20px;
+}
+
+.block-popular-items {
+  margin-bottom: 20px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.popular-row {
+  min-height: 90px;
+  margin-bottom: 20px;
+  /* убрать */
+  outline: 2px solid blue;
+}
+
+.popular-items {
+  margin-bottom: 20px;
+  font-size: 0;
+  /* убрать */
+  outline: 2px solid blue;
+}
+
+.item {
+  display: inline-block;
+  width: 220px;
+  min-height: 318px;
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.main-item:last-child {
+  margin-right: 0;
+}
+
+.block-popular-brends {
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.popular-brends {
+  font-size: 0;
+  /* убрать */
+  outline: 2px solid blue;
+}
+
+.brend {
+  display: inline-block;
+  width: 218px;
+  min-height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+}
+
+.brend:nth-child(4n) {
+  margin-right: 0;
+}
+
+.block-service {
+  margin-bottom: 80px;
+  /* убрать */
+  outline: 2px solid green;
+}
+
+.block-service-title {
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.service-slider {
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.company {
+  float: left;
+  width: 540px;
+  margin-bottom: 60px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.contacts {
+  float: right;
+  width: 300px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.footer-top {
+  /* убрать */
+  outline: 2px solid green;
+}
+
+.footer-left-column {
+  float: left;
+  width: 340px;
+  min-height: 200px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.footer-right-column {
+  float: right;
+  width: 560px;
+  min-height: 200px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.footer-menu li {
+  display: inline;
+}
+
+.footer-menu-catalog li {
+  display: inline;
+}
+
+.footer-bottom {
+  /* убрать */
+  outline: 2px solid green;
+}
+
+.footer-copyright {
+  float: left;
+  width: 240px;
+  min-height: 100px;
+  margin-right: 150px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.footer-social {
+  float: left;
+  width: 170px;
+  min-height: 100px;
+  margin-right: 80px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.footer-feedback {
+  float: left;
+  width: 140px;
+  min-height: 100px;
+  margin-right: 20px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.footer-developer {
+  float: right;
+  width: 140px;
+  min-height: 100px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+/* Страница каталога */
+
+.breadcrumbs {
+  min-height: 60px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
 .category-title {
+  min-height: 89px;
+  margin-top: auto;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.filter {
+  float: left;
+  width: 220px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.sorting-block {
+  float: right;
+  width: 700px;
+  min-height: 38px;
+  margin-bottom: 20px;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.catalog-items {
+  float: right;
+  width: 700px;
+  margin-bottom: 60px;
+  font-size: 0;
+  /* убрать */
+  outline: 2px solid yellow;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.category-text {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* убрать */
+  outline: 2px solid green;
+}
+
+.category-text-title {
+  margin-top: auto;
 }
 
 .popular-title {
+  display: inline;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
