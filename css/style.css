@@ -52,6 +52,8 @@ body {
 }
 
 .shop-info {
+  padding-top: 45px;
+  padding-bottom: 40px;
   /* убрать */
   outline: 2px solid green;
 }
@@ -59,7 +61,6 @@ body {
 .about-shop {
   float: left;
   width: 300px;
-  min-height: 158px;
   /* убрать */
   outline: 2px solid yellow;
 }
@@ -79,16 +80,13 @@ body {
 }
 
 .main-navigation {
-  width: 940px;
-  min-height: 60px;
-  margin: 0 auto;
-  padding: 0 10px 60px 10px;
-  /* убрать */
-  outline: 2px solid red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 2px solid green;
 }
 
 .navigation li {
-  display: inline;
+  display: inline-block;
 }
 
 .main-content {
@@ -101,14 +99,14 @@ body {
   outline: 2px solid yellow;
 }
 
-.promo-row-title {
+.promo-row-top {
   margin-bottom: 20px;
   font-size: 0;
   /* убрать */
   outline: 2px solid blue;
 }
 
-.banner-row {
+.banner {
   display: inline-block;
   width: 300px;
   min-height: 122px;
@@ -116,11 +114,11 @@ body {
   font-size: 13px;
 }
 
-.banner-row:last-child {
+.promo-row-top .banner:last-child {
   margin-right: 0;
 }
 
-.promo-row-column {
+.promo-row-bottom {
   /* убрать */
   outline: 2px solid blue;
 }
@@ -131,10 +129,16 @@ body {
   min-height: 266px;
 }
 
-.banner-column {
+.promo-column-right {
   float: right;
   width: 300px;
-  min-height: 122px;
+}
+
+.promo-column-right .banner {
+  margin-right: 0;
+}
+
+.promo-column-right .banner:first-child {
   margin-bottom: 20px;
 }
 
@@ -145,10 +149,19 @@ body {
 }
 
 .popular-row {
-  min-height: 90px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 20px;
   /* убрать */
   outline: 2px solid blue;
+}
+
+.popular-title {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
 }
 
 .popular-items {
@@ -197,7 +210,8 @@ body {
 }
 
 .block-service {
-  margin-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 100px;
   /* убрать */
   outline: 2px solid green;
 }
@@ -299,14 +313,16 @@ body {
 /* Страница каталога */
 
 .breadcrumbs {
-  min-height: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /* убрать */
   outline: 2px solid yellow;
 }
 
 .category-title {
-  min-height: 89px;
-  margin-top: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -344,6 +360,10 @@ body {
   margin-right: 0;
 }
 
+.pagination {
+  font-size: 13px;
+}
+
 .category-text {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -353,12 +373,4 @@ body {
 
 .category-text-title {
   margin-top: auto;
-}
-
-.popular-title {
-  display: inline;
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  text-transform: uppercase;
 }
