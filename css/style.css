@@ -21,7 +21,7 @@ body {
 }
 
 .main-header {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .main-menu {
@@ -344,7 +344,6 @@ body {
 .catalog-content {
   float: right;
   width: 700px;
-  margin-bottom: 60px;
 }
 
 .sorting-block {
@@ -372,6 +371,7 @@ body {
 }
 
 .category-text {
+  margin-top: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   /* убрать */
