@@ -249,7 +249,7 @@ body {
 .footer-left-column {
   float: left;
   width: 340px;
-  min-height: 200px;
+  min-height: 193px;
   /* убрать */
   outline: 2px solid yellow;
 }
@@ -257,7 +257,7 @@ body {
 .footer-right-column {
   float: right;
   width: 560px;
-  min-height: 200px;
+  min-height: 193px;
   /* убрать */
   outline: 2px solid yellow;
 }
@@ -322,13 +322,16 @@ body {
 .category-title {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 20;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
   /* убрать */
   outline: 2px solid yellow;
+}
+
+.catalog {
+  outline: 2px solid #d6dbff;
 }
 
 .filter {
@@ -338,9 +341,12 @@ body {
   outline: 2px solid yellow;
 }
 
-.sorting-block {
+.catalog-content {
   float: right;
   width: 700px;
+}
+
+.sorting-block {
   min-height: 38px;
   margin-bottom: 20px;
   /* убрать */
@@ -348,9 +354,7 @@ body {
 }
 
 .catalog-items {
-  float: right;
-  width: 700px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-size: 0;
   /* убрать */
   outline: 2px solid yellow;
@@ -362,6 +366,9 @@ body {
 
 .pagination {
   font-size: 13px;
+  min-height: 38px;
+  margin-bottom: 60px;
+  outline: 2px solid yellow;
 }
 
 .category-text {
@@ -372,5 +379,5 @@ body {
 }
 
 .category-text-title {
-  margin-top: auto;
+  margin: 0;
 }
