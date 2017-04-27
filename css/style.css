@@ -344,6 +344,7 @@ body {
 .catalog-content {
   float: right;
   width: 700px;
+  margin-bottom: 60px;
 }
 
 .sorting-block {
@@ -367,7 +368,6 @@ body {
 .pagination {
   font-size: 13px;
   min-height: 38px;
-  margin-bottom: 60px;
   outline: 2px solid yellow;
 }
 
