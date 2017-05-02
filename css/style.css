@@ -1,10 +1,134 @@
 body {
-  font-family: "Cuprum", "Arial", sans-serif;
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  font-weight: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
 }
+
+.sprite {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite-icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -10px -46px;
+}
+
+.sprite-icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -82px;
+}
+
+.sprite-icon-check-off-hover {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -125px;
+}
+
+.sprite-icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -168px;
+}
+
+.sprite-icon-check-on-hover {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -211px;
+}
+
+.sprite-icon-facebook {
+    width: 10px;
+    height: 18px;
+    background-position: -10px -254px;
+}
+
+.sprite-icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -10px -292px;
+}
+
+.sprite-icon-instagramm {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -324px;
+}
+
+.sprite-icon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -361px;
+}
+
+.sprite-icon-login-hover {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -398px;
+}
+
+.sprite-icon-logout {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -435px;
+}
+
+.sprite-icon-logout-hover {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -472px;
+}
+
+.sprite-icon-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -10px -509px;
+}
+
+.sprite-icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -548px;
+}
+
+.sprite-icon-search-focus {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -585px;
+}
+
+.sprite-icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -622px;
+}
+
+.sprite-icon-user-hover {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -660px;
+}
+
+.sprite-icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -10px -698px;
+}
+
 
 .clearfix::after {
   content: "";
@@ -16,77 +140,258 @@ body {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  /* убрать */
-  outline: 2px solid red;
 }
 
 .main-header {
   padding-bottom: 60px;
+  background-color: #f1f5f7;
 }
 
 .main-menu {
-  min-height: 42px;
-  /* убрать */
-  outline: 2px solid green;
+  height: 42px;
+  background-color: #293449;
 }
 
 .header-logo {
+  height: 42px;
   float:left;
-  width: 220px;
-  /* убрать */
-  outline: 2px solid yellow;
+  margin-right: 10px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.logo-name {
+  display: block;
+  padding-top: 12px;
+  padding-right: 54px;
+  padding-bottom: 12px;
+  padding-left: 54px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-logo:hover {
+  background-color: #ca2c37;
+  border-bottom: 5px solid #9a212a;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+  border-bottom: 5px solid #8e1e26;
 }
 
 .block-search {
   float: left;
+}
+
+.search-btn {
+  position: relative;
+}
+
+.search-btn::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 20px;
+  height: 20px;
+  background: red url("img/sprite-icon-search.png") no-repeat;
+  background-position: -10px -548px;
+}
+
+.search input {
   width: 220px;
-  /* убрать */
-  outline: 2px solid yellow;
+  padding: 11px 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+  border: none;
 }
 
 .top-menu {
   float: right;
-  width: 460px;
-  /* убрать */
-  outline: 2px solid yellow;
+}
+
+.top-menu-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 150px;
+  padding: 12px 10px;
+  padding-left: 50px;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.top-menu-btn::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 24px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.top-menu-btn-bookmark::before {
+  width: 14px;
+  height: 16px;
+  background-position: -10px -46px;
+  opacity: 0.3;
+}
+
+.top-menu-btn-basket::before {
+  width: 17px;
+  height: 16px;
+  background-position: -10px -10px;
+  opacity: 0.3;
+}
+
+.top-menu-btn-bookmark:hover,
+.top-menu-btn-basket:hover {
+  background-color: #212a3a;
+}
+
+.top-menu-btn-bookmark:active,
+.top-menu-btn-basket:active {
+  opacity: 0.6;
+}
+
+.top-menu-btn-order {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #63a63e;
+}
+
+.top-menu-btn-order:hover {
+  background-color: #5fbb2d;
+}
+
+.top-menu-btn-order:active {
+  opacity: 0.5;
 }
 
 .shop-info {
   padding-top: 45px;
   padding-bottom: 40px;
-  /* убрать */
-  outline: 2px solid green;
 }
 
 .about-shop {
   float: left;
-  width: 300px;
-  /* убрать */
-  outline: 2px solid yellow;
+  max-width: 181px;
+  margin-left: 50px;
+  margin-right: 66px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
 }
 
 .shop-contacts {
   float: left;
-  width: 300px;
-  /* убрать */
-  outline: 2px solid yellow;
+  width: 271px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  text-align: center;
+}
+
+.shop-contacts-phone {
+  position: relative;
+  display: block;
+  padding: 10px 50px;
+  padding-left: 70px;
+  border: 3px solid #ffffff;
+  font-size: 21px;
+  line-height: 18px;
+  color: #ee3643;
+}
+
+.shop-contacts-phone::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/sprite.png");
+  background-position: -10px -509px;
 }
 
 .user-block {
   float: right;
-  width: 300px;
-  /* убрать */
-  outline: 2px solid yellow;
+  min-width: 280px;
+}
+
+.user-block-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 13px 24px;
+  font-size: 21px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.user-block-btn-login {
+  padding-left: 45px;
+}
+
+.user-block-btn-login::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/sprite.png");
+  background-position: -10px -361px;
+}
+
+.user-block-btn-registration {
+  margin-left: 10px;
 }
 
 .main-navigation {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  outline: 2px solid green;
+
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  outline: 1px solid yellow;
 }
 
 .navigation li {
   display: inline-block;
+  vertical-align: top;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.navigation a {
+  display: block;
+  padding: 20px 32px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #32425c;
+  border-bottom: 3px solid #293449;
+}
+
+.navigation a:hover {
+  background-color: #293449;
+}
+
+.navigation a:active {
+
 }
 
 .main-content {
@@ -108,14 +413,70 @@ body {
 
 .banner {
   display: inline-block;
+  vertical-align: top;
   width: 300px;
   min-height: 122px;
   margin-right: 20px;
   font-size: 13px;
 }
 
+.banner-title {
+  padding-left: 22px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.banner-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 135px;
+  margin-left: 23px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.banner-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.banner-btn:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .promo-row-top .banner:last-child {
   margin-right: 0;
+}
+
+.banner-materials {
+  background-color: #f6b22d;
+  background-image: url("../img/banner-materials.png"), url("../img/new-flag.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 213px 30px, 240px 0px;
+}
+
+.banner-instruments {
+  background: #4aafde url("../img/banner-instruments.png") no-repeat 196px 32px;
+}
+
+.banner-technics {
+  background: #cc79d1 url("../img/banner-technics.png") no-repeat 191px 30px;
+}
+
+.banner-discounts {
+  background: #85d179 url("../img/banner-discounts.png") no-repeat 196px 26px;
+}
+
+.banner-shipping {
+  background: #f6b22d url("../img/banner-shipping.png") no-repeat 190px 32px;
 }
 
 .promo-row-bottom {
@@ -152,6 +513,7 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
+  background-color: #f7f3ec;
   /* убрать */
   outline: 2px solid blue;
 }
@@ -212,6 +574,7 @@ body {
 .block-service {
   padding-top: 60px;
   padding-bottom: 100px;
+  background-color: #f1f5f7;
   /* убрать */
   outline: 2px solid green;
 }
@@ -242,6 +605,7 @@ body {
 }
 
 .footer-top {
+  background-color: #32425c;
   /* убрать */
   outline: 2px solid green;
 }
@@ -252,6 +616,17 @@ body {
   min-height: 193px;
   /* убрать */
   outline: 2px solid yellow;
+}
+
+.footer-logo {
+  width: 220px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.footer-logo .logo-name {
+  padding-top: 21px;
+  padding-bottom: 16px;
 }
 
 .footer-right-column {
@@ -271,6 +646,7 @@ body {
 }
 
 .footer-bottom {
+  background-color: #293449;
   /* убрать */
   outline: 2px solid green;
 }
@@ -326,6 +702,7 @@ body {
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+  background-color: #f1f5f7;
   /* убрать */
   outline: 2px solid yellow;
 }
@@ -374,6 +751,7 @@ body {
   margin-top: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #f1f5f7;
   /* убрать */
   outline: 2px solid green;
 }
