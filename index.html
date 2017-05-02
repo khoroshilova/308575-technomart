@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -18,13 +19,13 @@
           </div>
           <div class="block-search">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
-              <button type="submit"></button>
-              <input type="search" placeholder="Поиск"></input>
+              <button class="search-btn" type="submit"></button>
+              <input type="search" placeholder="Поиск">
             </form>
           </div>
           <div class="top-menu">
-            <a class="top-menu-btn top-menu-btn-bookmark" href="#">Закладки</a>
-            <a class="top-menu-btn top-menu-btn-basket" href="#">Корзина:</a>
+            <a class="top-menu-btn top-menu-btn-bookmark" href="#">Закладки: 0</a>
+            <a class="top-menu-btn top-menu-btn-basket" href="#">Корзина: 0</a>
             <a class="top-menu-btn top-menu-btn-order" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -35,12 +36,12 @@
           <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
         </section>
         <section class="shop-contacts">
-          <span>+7 (812) 555-05-55</span>
+          <span class="shop-contacts-phone">+7 (812) 555-05-55</span>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 9/18
         </section>
         <section class="user-block">
-          <a class="login" href="#">Войти</a>
-          <a class="login" href="#">Регистрация</a>
+          <a class="user-block-btn user-block-btn-login" href="#">Войти</a>
+          <a class="user-block-btn user-block-btn-registration" href="#">Регистрация</a>
           <!-- модальное окно -->
         </section>
       </div>
@@ -78,15 +79,15 @@
         <div class="promo-block">
           <div class="promo-row-top">
             <div class="banner banner-materials">
-              <h2>Материалы</h2>
+              <h2 class="banner-title">Материалы</h2>
               <a class="banner-btn" href="#">На любой вкус</a>
             </div>
             <div class="banner banner-instruments">
-              <h2>Инструмент</h2>
+              <h2 class="banner-title">Инструмент</h2>
               <a class="banner-btn" href="#">На все случаи</a>
             </div>
             <div class="banner banner-technics">
-              <h2>Техника</h2>
+              <h2 class="banner-title">Техника</h2>
               <a class="banner-btn" href="#">Для стройки</a>
             </div>
           </div>
@@ -115,11 +116,11 @@
             </div>
             <div class="promo-column-right">
               <div class="banner banner-discounts">
-                <h2>Скидки 50%</h2>
+                <h2 class="banner-title">Скидки 50%</h2>
                 <a class="banner-btn" href="#">На 350 товаров</a>
               </div>
               <div class="banner banner-shipping">
-                <h2>Доставка</h2>
+                <h2 class="banner-title">Доставка</h2>
                 <a class="banner-btn" href="#">Бесплатно</a>
               </div>
             </div>
@@ -225,9 +226,9 @@
             </p>
           </div>
           <div class="service-slider">
-            <input type="radio" id="shipping" name="shipping"></input>
-            <input type="radio" id="guarantee" name="guarantee"></input>
-            <input type="radio" id="credit" name="credit"></input>
+            <input type="radio" id="shipping" name="shipping">
+            <input type="radio" id="guarantee" name="guarantee">
+            <input type="radio" id="credit" name="credit">
             <div class="service-slider-controls">
               <label for="shipping"></label>
               <label for="guarantee"></label>
@@ -300,7 +301,7 @@
         <div class="container clearfix">
           <div class="footer-left-column">
             <div class="footer-logo">
-              <a class="logo-name">ТЕХНОМАРТ</a>
+              <a class="logo-name" href="#">ТЕХНОМАРТ</a>
             </div>
             <p>
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 9/18 +7 (812) 555-05-55
