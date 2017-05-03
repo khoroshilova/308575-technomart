@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -20,7 +22,8 @@
           <div class="block-search">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
               <button class="search-btn" type="submit"></button>
-              <input type="search" placeholder="Поиск">
+              <label for="search"></label>
+              <input type="search" name="search" placeholder="Поиск">
             </form>
           </div>
           <div class="top-menu">
@@ -33,7 +36,8 @@
 
       <div class="shop-info container clearfix">
         <section class="about-shop">
-          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p>Интернет-магазин строительных материалов<br>
+            и инструментов для ремонта</p>
         </section>
         <section class="shop-contacts">
           <span class="shop-contacts-phone">+7 (812) 555-05-55</span>
@@ -133,54 +137,60 @@
             <a class="popular-btn" href="#">Все популярные товары</a>
           </div>
           <section class="popular-items">
+
             <article class="item main-item">
               <div class="actions">
                 <a class="btn-buy" href="#">Купить</a>
                 <a class="btn-bookmark" href="#">В закладки</a>
               </div>
               <div class="item-picture">
-                <img src="img/bosch-9000.jpg" alt="Перфоратор BOSCH BFG 9000">
+                <img src="img/bosch-9000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 9000">
               </div>
               <a class="item-title" href="#">Перфоратор BOSCH BFG 9000</a>
-              <span class="old-price">32500 р.</span>
-              <span class="price">25500 р.</span>
+              <div class="old-price">32500 р.</div>
+              <div class="price">25500 р.</div>
             </article>
+
             <article class="item main-item">
               <div class="actions">
                 <a class="btn-buy" href="#">Купить</a>
                 <a class="btn-bookmark" href="#">В закладки</a>
               </div>
               <div class="item-picture">
-                <img src="img/bosch-3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+                <img src="img/bosch-3000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 3000">
               </div>
               <a class="item-title" href="#">Перфоратор BOSCH BFG 3000</a>
-              <span class="old-price">22500 р.</span>
-              <span class="price">15500 р.</span>
+              <div class="old-price">22500 р.</div>
+              <div class="price">15500 р.</div>
             </article>
+
             <article class="item main-item">
               <div class="actions">
                 <a class="btn-buy" href="#">Купить</a>
                 <a class="btn-bookmark" href="#">В закладки</a>
               </div>
               <div class="item-picture">
-                <img src="img/bosch-6000.jpg" alt="Перфоратор BOSCH BFG 6000">
+                <img src="img/bosch-6000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <a class="item-title" href="#">Перфоратор BOSCH BFG 6000</a>
-              <span class="old-price">30500 р.</span>
-              <span class="price">25500 р.</span>
+              <div class="old-price">30500 р.</div>
+              <div class="price">25500 р.</div>
             </article>
+
             <article class="item main-item">
+              <div class="flag flag-new">новинка</div>
               <div class="actions">
                 <a class="btn-buy" href="#">Купить</a>
                 <a class="btn-bookmark" href="#">В закладки</a>
               </div>
               <div class="item-picture">
-                <img src="img/bosch-2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+                <img src="img/bosch-2000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 2000">
               </div>
               <a class="item-title" href="#">Перфоратор BOSCH BFG 2000</a>
-              <span class="price">12500 р.</span>
-              <span class="new"></span>
+              <div class="old-price"></div>
+              <div class="price">12500 р.</div>
             </article>
+
           </section>
         </section>
         <section class="block-popular-brends">
@@ -190,28 +200,28 @@
           </div>
           <section class="popular-brends">
             <a class="brend" href="#">
-              <img src="img/brand-bosch.jpg" alt="Bosch">
+              <img src="img/brand-bosch.jpg" width="218" height="143" alt="Bosch">
             </a>
             <a class="brend" href="#">
-              <img src="img/brand-makita.jpg" alt="Makita">
+              <img src="img/brand-makita.jpg" width="218" height="143" alt="Makita">
             </a>
             <a class="brend" href="#">
-              <img src="img/brand-dewalt.jpg" alt="DeWALT">
+              <img src="img/brand-dewalt.jpg" width="218" height="143" alt="DeWALT">
             </a>
             <a class="brend" href="#">
-              <img src="img/brand-interskol.jpg" alt="Интерскол">
+              <img src="img/brand-interskol.jpg" width="218" height="143" alt="Интерскол">
             </a>
             <a class="brend" href="#">
-              <img src="img/brand-hitachi.jpg" alt="Hitachi">
+              <img src="img/brand-hitachi.jpg" width="218" height="143" alt="Hitachi">
             </a>
             <a class="brend" href="#">
-              <img src="img/brand-lg.jpg" alt="LG">
+              <img src="img/brand-lg.jpg" width="218" height="143" alt="LG">
             </a>
             <a class="brend" href="#">
-              <img src="img/brand-aeg.jpg" alt="AEG">
+              <img src="img/brand-aeg.jpg" width="218" height="143" alt="AEG">
             </a>
             <a class="brend" href="#">
-              <img src="img/brand-metabo.jpg" alt="Metabo">
+              <img src="img/brand-metabo.jpg" width="218" height="143" alt="Metabo">
             </a>
           </section>
         </section>
@@ -267,29 +277,32 @@
       <div class="block-info">
         <div class="container clearfix">
           <section class="company">
-            <h2>Компания "Техномарт"</h2>
+            <h2 class="block-info-title">Компания "Техномарт"</h2>
             <p>
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
             </p>
             <p>
               Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
             </p>
-            <ul>
+            <ul class="block-info-shipping">
               <li>Деловые линии</li>
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a class="company-btn" href="#">Подробнее о компании</a>
+            <a class="btn-company" href="#">Подробнее о компании</a>
           </section>
           <section class="contacts">
-            <h2>Контакты</h2>
+            <h2 class="block-info-title">Контакты</h2>
             <p>
               Вы можете забрать товар сами, заехав в наш офис:
             </p>
-            <a class="map" href="#">
+            <a
+              class="map"
+              target="_blank"
+              href="https://yandex.ru/maps/2/saint-petersburg/?source=morda&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2019&mode=search&sll=150.819833%2C59.608263&sspn=0.630341%2C0.264465&ll=30.323055%2C59.938631&z=16">
               <img src="img/map.png">
             </a>
-            <a class="write-us-btn" href="#">Заблудились? Пишите нам!</a>
+            <a class="btn-write-us" href="#">Заблудились? Пишите нам!</a>
             <!-- модальное окно -->
           </section>
         </div>
