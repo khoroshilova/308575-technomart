@@ -657,19 +657,13 @@ input[type="search"]:-ms-input-placeholder {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-}
-
-.slider-info {
-  width: 250px;
-  padding-top: 25px;
-  padding-left: 20px;
   color: #ffffff;
+  overflow: hidden;
 }
 
 .slider-title {
   margin: 0;
-  padding-bottom: 5px;
+  padding: 25px 0 5px 20px;
   font-size: 35px;
   font-weight: bold;
   line-height: 30px;
@@ -678,7 +672,7 @@ input[type="search"]:-ms-input-placeholder {
 
 .slider-text {
   margin: 0;
-  padding-bottom: 125px;
+  padding-left: 20px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -688,6 +682,8 @@ input[type="search"]:-ms-input-placeholder {
 .slider-btn {
   display: block;
   width: 195px;
+  margin-top: 125px;
+  margin-left: 20px;
   padding: 10px 0 10px 0;
   font-size: 14px;
   line-height: 18px;
@@ -723,11 +719,11 @@ input[type="search"]:-ms-input-placeholder {
   display: none;
 }*/
 
-#prev:checked ~ .slider-slides .slider-slide:nth-child(1) {
+#btn-1:checked ~ .slider-slides .slider-slide:nth-child(1) {
   display: block;
 }
 
-#next:checked ~ .slider-slides .slider-slide:nth-child(2) {
+#btn-2:checked ~ .slider-slides .slider-slide:nth-child(2) {
   display: block;
 }
 
@@ -1021,7 +1017,6 @@ input[type="search"]:-ms-input-placeholder {
   width:240px;
   height: 183px;
   top: 40px;
-  outline: 1px solid blue;
   text-align: center;
   z-index: 120;
 }
@@ -1033,12 +1028,32 @@ input[type="search"]:-ms-input-placeholder {
   margin: 0;
   background-color: #32425c;
   box-shadow: inset 0 1px 0 0 #293449;
+  cursor: pointer;
+}
+
+.service-slider-controls label:hover {
+  background-color: #293449;
+  box-shadow: inset 0 1px 0 0 #32425c;
 }
 
 .service-slider-controls label span {
+  display: block;
+  padding-top: 15px;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
+}
+
+#shipping:checked ~ .service-slider-controls label[for="shipping"],
+#guarantee:checked ~ .service-slider-controls label[for="guarantee"],
+#credit:checked ~ .service-slider-controls label[for="credit"]{
+  background-color: #ffffff;
+}
+
+#shipping:checked ~ .service-slider-controls label[for="shipping"] span,
+#guarantee:checked ~ .service-slider-controls label[for="guarantee"] span,
+#credit:checked ~ .service-slider-controls label[for="credit"] span {
+  color: #32425c;
 }
 
 .service-slider-slide h2 {
