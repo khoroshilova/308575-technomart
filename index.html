@@ -22,12 +22,12 @@
           <div class="block-search">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
               <input type="search" name="search" placeholder="Поиск">
-              <button class="search-btn-btn search-btn" type="submit"></button>
+              <button class="search-btn" type="submit"></button>
             </form>
           </div>
           <div class="top-menu">
-            <a class="top-menu-btn top-menu-btn-btn top-menu-btn-bookmark" href="#">Закладки: 0</a>
-            <a class="top-menu-btn top-menu-btn-btn top-menu-btn-basket" href="#">Корзина: 0</a>
+            <a class="top-menu-btn top-menu-btn-bookmark" href="#">Закладки: 0</a>
+            <a class="top-menu-btn top-menu-btn-basket" href="#">Корзина: 0</a>
             <a class="top-menu-btn top-menu-btn-order" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -43,7 +43,7 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 9/18
         </section>
         <section class="user-block">
-          <a class="user-block-btn user-block-btn-btn user-block-btn-login" href="#">Войти</a>
+          <a class="user-block-btn user-block-btn-login" href="#">Войти</a>
           <a class="user-block-btn user-block-btn-registration" href="#">Регистрация</a>
           <!-- модальное окно -->
         </section>
@@ -141,7 +141,7 @@
 
             <article class="item main-item">
               <div class="actions">
-                <a class="btn-buy" href="#">Купить</a>
+                <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                 <a class="btn-bookmark" href="#">В закладки</a>
               </div>
               <div class="item-picture">
@@ -154,7 +154,7 @@
 
             <article class="item main-item">
               <div class="actions">
-                <a class="btn-buy" href="#">Купить</a>
+                <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                 <a class="btn-bookmark" href="#">В закладки</a>
               </div>
               <div class="item-picture">
@@ -167,7 +167,7 @@
 
             <article class="item main-item">
               <div class="actions">
-                <a class="btn-buy" href="#">Купить</a>
+                <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                 <a class="btn-bookmark" href="#">В закладки</a>
               </div>
               <div class="item-picture">
@@ -181,7 +181,7 @@
             <article class="item main-item">
               <div class="flag flag-new">новинка</div>
               <div class="actions">
-                <a class="btn-buy" href="#">Купить</a>
+                <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                 <a class="btn-bookmark" href="#">В закладки</a>
               </div>
               <div class="item-picture">
@@ -238,9 +238,9 @@
           </div>
 
           <div class="service-slider">
-            <input type="radio" id="shipping" name="toggle" checked>
-            <input type="radio" id="guarantee" name="toggle">
-            <input type="radio" id="credit" name="toggle">
+            <input type="radio" id="shipping" name="toggle1" checked>
+            <input type="radio" id="guarantee" name="toggle1">
+            <input type="radio" id="credit" name="toggle1">
             <div class="service-slider-controls">
               <label for="shipping">
                 <span>Доставка</span>
@@ -254,34 +254,28 @@
             </div>
             <div class="service-slider-slides">
               <div class="service-slider-slide">
-                <div class="service-slider-slide-info">
-                  <h2>Доставка</h2>
-                  <p>
-                    Мы с удовольствием доставим ваш товар прямо<br>
-                    к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
-                    поднимая его на этаж!
-                  </p>
-                </div>
+                <h2 class="service-slider-title">Доставка</h2>
+                <p class="service-slider-text">
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
+                  поднимая его на этаж!
+                </p>
               </div>
               <div class="service-slider-slide">
-                <div class="service-slider-slide-info">
-                  <h2>Гарантии</h2>
-                  <p>
-                    Если купленный у нас товар поломается или заискрит,<br>
-                    а также в случае пожара, спровоцированного его возгоранием, вы всегда сможете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-                    Дом уж восстановите как-нибудь сами.
-                  </p>
-                </div>
+                <h2 class="service-slider-title">Гарантии</h2>
+                <p class="service-slider-text">
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгоранием, вы всегда сможете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
               </div>
               <div class="service-slider-slide">
-                <div class="service-slider-slide-info">
-                  <h2>Кредит</h2>
-                  <p>
-                    Залезть в долговую яму стало проще!<br>
-                    Кредитные консультанты придут вам на помощь.
-                  </p>
-                  <a class="btn-credit">Отправить заявку</a>
-                </div>
+                <h2 class="service-slider-title">Кредит</h2>
+                <p class="service-slider-text">
+                  Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="btn-credit">Отправить заявку</a>
               </div>
             </div>
           </div>

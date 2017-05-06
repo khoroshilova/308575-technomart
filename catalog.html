@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -21,9 +21,8 @@
           </div>
           <div class="block-search">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
-              <button type="submit"></button>
-              <label for="search"></label>
               <input type="search" name="search" placeholder="Поиск">
+              <button class="search-btn" type="submit"></button>
             </form>
           </div>
           <div class="top-menu">
@@ -36,7 +35,8 @@
 
       <div class="shop-info container clearfix">
         <section class="about-shop">
-          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p>Интернет-магазин строительных материалов<br>
+            и инструментов для ремонта</p>
         </section>
         <section class="shop-contacts">
           <span class="shop-contacts-phone">+7 (812) 555-05-55</span>
@@ -44,10 +44,11 @@
         </section>
         <section class="user-block">
           <div class="user-name">
-            <a class="user-profile" href="#">Равшан Джамшутович</a>
-            <a class="exit" href="#"></a>
+            <a class="user-profile user-profile-btn" href="#">Равшан Джамшутович</a>
+            <a class="user-exit user-exit-btn" href="#"></a>
           </div>
           <a class="user-btn" href="#">Мои заказы</a>
+          <span class="dot"></span>
           <a class="user-btn" href="#">Личный Кабинет</a>
         </section>
       </div>
@@ -55,7 +56,7 @@
       <nav class="main-navigation container">
         <ul class="navigation">
           <li>
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li>
             <a href="#">Компания</a>
@@ -83,30 +84,39 @@
     <main class="main-catalog">
       <div class="container">
         <div class="breadcrumbs">
-          <a href="index.html"></a>
-          <a href="#">Каталог</a>
-          <a href="#">Инструмент</a>
-          <a>Перфораторы</a>
+          <a class="breadcrumbs-btn breadcrumbs-btn-home" href="index.html"></a>
+          <a class="breadcrumbs-btn" href="#">Каталог</a>
+          <a class="breadcrumbs-btn" href="#">Инструмент</a>
+          <a class="breadcrumbs-btn">Перфораторы</a>
         </div>
 
         <h1 class="category-title">Перфораторы</h1>
 
         <div class="catalog clearfix">
           <aside class="filter">
-            <span>Фильтр:</span>
+            <span class="filter-title">Фильтр:</span>
             <form action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
+
+              <fieldset class="range-filter">
                 <legend>Цена:</legend>
                 <div class="range-controls">
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle2 toggle-min"></div>
+                  <div class="toggle2 toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <input class="min-price" type="text" value="0">
-                  <input class="max-price" type="text" value="30000">
+                  <label class="min-price">
+                    <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    <input type="text" name="max-price" value="30000">
+                  </label>
                 </div>
               </fieldset>
-              <fieldset>
+
+              <fieldset class="brend-filter">
                 <legend>Производители:</legend>
                 <label for="Bosch">
                   <input id="Bosch" type="checkbox" name="Bosch" checked>
@@ -129,7 +139,7 @@
                   Hitachi
                 </label>
               </fieldset>
-              <fieldset>
+              <fieldset class="power-filter">
                 <legend>Питание:</legend>
                 <label for="battery">
                   <input id="battery" type="radio" name="groups" value="battery" checked>
@@ -146,16 +156,18 @@
 
           <div class="catalog-content">
             <div class="sorting-block">
-              <span>Сортировка:</span>
-              <a class="sorting-price" href="#">По цене</a>
-              <a class="sorting-type" href="#">По типу</a>
-              <a class="sorting-function" href="#">По функционалу</a>
+              <span class="sorting-block-title">Сортировка:</span>
+              <a class="sorting-btn" href="#">По цене</a>
+              <a class="sorting-btn" href="#">По типу</a>
+              <a class="sorting-btn" href="#">По функционалу</a>
+              <a class="sorter-up"></a>
+              <a class="sorter-down"></a>
             </div>
 
             <section class="catalog-items">
               <article class="item catalog-item">
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -168,7 +180,7 @@
 
               <article class="item catalog-item">
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -182,7 +194,7 @@
               <article class="item catalog-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -195,7 +207,7 @@
 
               <article class="item catalog-item">
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -209,7 +221,7 @@
               <article class="item catalog-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -222,7 +234,7 @@
 
               <article class="item catalog-item">
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -236,7 +248,7 @@
               <article class="item catalog-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -249,7 +261,7 @@
 
               <article class="item catalog-item">
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -262,7 +274,7 @@
 
               <article class="item catalog-item">
                 <div class="actions">
-                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-buy btn-buy-basket" href="#">Купить</a>
                   <a class="btn-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="item-picture">
@@ -274,7 +286,7 @@
               </article>
             </section>
             <div class="pagination">
-              <a class="btn-pagination" href="#">1</a>
+              <a class="btn-pagination current">1</a>
               <a class="btn-pagination" href="#">2</a>
               <a class="btn-pagination" href="#">3</a>
               <a class="btn-pagination" href="#">Следующая</a>
@@ -357,7 +369,7 @@
           </section>
           <section class="footer-developer">
             <p>Разработано -</p>
-            <a class="footer-developer-link" href="https://htmlacademy.ru/intensive/htmlcss">https://htmlacademy.ru</a>
+            <a class="footer-developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </section>
         </div>
       </div>
