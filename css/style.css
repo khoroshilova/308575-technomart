@@ -1,5 +1,5 @@
 body {
-  min-width: 960px
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -881,30 +881,33 @@ input[type="search"]:-ms-input-placeholder {
 .service-slider {
   position: relative;
   width: 940px;
-  height: 330px;
   margin: 0 auto;
-  background-image: url("../img/shadow.png");
-  background-repeat: no-repeat;
-  background-position: 231px 0;
 }
 
-.service-slider input[type=radio] {
+.service-slider input[type="radio"] {
   display: none;
 }
 
 .service-slider-controls {
+  float: left;
+  width: 240px;
   position: absolute;
-  width:240px;
-  height: 183px;
   top: 40px;
-  text-align: center;
-  z-index: 120;
+}
+
+.service-slider::before {
+  content: "";
+  position: absolute;
+  left: 230px;
+  width: 10px;
+  height: 272px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  z-index: 100;
 }
 
 .service-slider-controls label {
   display: block;
-  width: 240px;
-  height: 61px;
   margin: 0;
   background-color: #32425c;
   box-shadow: inset 0 1px 0 0 #405069,
@@ -920,8 +923,7 @@ input[type="search"]:-ms-input-placeholder {
 
 .service-slider-controls label span {
   display: block;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding: 14px 20px 17px 20px;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
@@ -941,16 +943,14 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .service-slider-slide {
-  position: absolute;
-  top: 0;
-  left: 320px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  float: right;
+  width: 620px;
+  height: 330px;
   display: none;
 }
 
 .service-slider-title {
+  padding-top: 15px;
   margin-bottom: 40px;
   font-size: 35px;
   line-height: 24px;
@@ -959,7 +959,6 @@ input[type="search"]:-ms-input-placeholder {
 
 .service-slider-text {
   width: 385px;
-  margin-bottom: 33px;
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -969,6 +968,7 @@ input[type="search"]:-ms-input-placeholder {
 .btn-credit {
   display: block;
   width: 195px;
+  margin-top: 20px;
   padding: 10px 0 10px 0;
   font-size: 14px;
   line-height: 18px;
@@ -992,19 +992,19 @@ input[type="search"]:-ms-input-placeholder {
 .service-slider-slide:nth-child(1) {
   background-image: url("../img/service-slider-1.png");
   background-repeat: no-repeat;
-  background-position: 150px 70px;
+  background-position: 150px 69px;
 }
 
 .service-slider-slide:nth-child(2) {
   background-image: url("../img/service-slider-2.png");
   background-repeat: no-repeat;
-  background-position: 230px 50px;
+  background-position: 230px 47px;
 }
 
 .service-slider-slide:nth-child(3) {
   background-image: url("../img/service-slider-3.png");
   background-repeat: no-repeat;
-  background-position: 150px 70px;
+  background-position: 150px 45px;
 }
 
 #shipping:checked ~ .service-slider-slides .service-slider-slide:nth-child(1) {
@@ -1016,7 +1016,6 @@ input[type="search"]:-ms-input-placeholder {
 #credit:checked ~ .service-slider-slides .service-slider-slide:nth-child(3) {
   display: block;
 }
-
 /* Слайдер низ */
 
 .block-info {
@@ -1627,90 +1626,93 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 /* Фильтр Бренд */
-
-.brand-filter-checkbox input[type="checkbox"] {
+.brand-filter input[type="checkbox"] {
   display: none;
 }
 
-.brand-filter-checkbox {
+.brand-filter label {
   display: block;
   position: relative;
   margin-top: 10px;
   margin-bottom: 18px;
-  padding-left: 35px;
+  padding-left: 32px;
   font-size: 15px;
   line-height: 20px;
   font-weight: normal;
   cursor: pointer;
 }
 
-.brand-filter-checkbox input[type="checkbox"] + .checkbox-indicator::before {
+.brand-filter label::before {
   content: "";
   position: absolute;
   top: -3px;
   left: 0;
   width: 23px;
   height: 23px;
-  background: url("../img/icon-check-off.png") no-repeat;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -107px -5px;
 }
 
-.brand-filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
+#bosch + label[for="bosch"]:hover::before,
+#interskol + label[for="interskol"]:hover::before,
+#makita + label[for="makita"]:hover::before,
+#dewalt + label[for="dewalt"]:hover::before,
+#hitachi + label[for="hitachi"]:hover::before {
   width: 23px;
   height: 23px;
-  background: #ffffff url("../img/icon-check-off-disabled.png") no-repeat;
+  background-position: -140px -5px;
 }
 
-.brand-filter-checkbox:hover input[type="checkbox"]:disabled + .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 23px;
-  height: 23px;
-  background: #ffffff url("../img/icon-check-off-disabled.png") no-repeat;
-}
-
-.brand-filter-checkbox:hover input[type="checkbox"] + .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 23px;
-  height: 23px;
-  background: url("../img/icon-check-off-hover.png") no-repeat;
-}
-
-.brand-filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
+#bosch:disabled + label[for="bosch"]::before,
+#interskol:disabled + label[for="interskol"]::before,
+#makita:disabled + label[for="makita"]::before,
+#dewalt:disabled + label[for="dewalt"]::before,
+#hitachi:disabled + label[for="hitachi"]::before {
   width: 27px;
   height: 27px;
-  background: #ffffff url("../img/icon-check-on.png") no-repeat;
+  background-position: -107px -5px;
+  opacity: 0.4;
 }
 
-.brand-filter-checkbox:hover input[type="checkbox"]:checked + .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
+#bosch:checked + label[for="bosch"]::before,
+#interskol:checked + label[for="interskol"]::before,
+#makita:checked + label[for="makita"]::before,
+#dewalt:checked + label[for="dewalt"]::before,
+#hitachi:checked + label[for="hitachi"]::before {
   width: 27px;
   height: 27px;
-  background: #ffffff url("../img/icon-check-on-hover.png") no-repeat;
+  background-position: -173px -5px;
+}
+
+#bosch:checked + label[for="bosch"]:hover::before,
+#interskol:checked + label[for="interskol"]:hover::before,
+#makita:checked + label[for="makita"]:hover::before,
+#dewalt:checked + label[for="dewalt"]:hover::before,
+#hitachi:checked + label[for="hitachi"]:hover::before {
+  width: 27px;
+  height: 27px;
+  background-position: -210px -5px;
+}
+
+#bosch:disabled:checked + label[for="bosch"]::before,
+#interskol:disabled:checked + label[for="interskol"]::before,
+#makita:disabled:checked + label[for="makita"]::before,
+#dewalt:disabled:checked + label[for="dewalt"]::before,
+#hitachi:disabled:checked + label[for="hitachi"]:before {
+  width: 27px;
+  height: 27px;
+  background-position: -173px -5px;
+  opacity: 0.4;
 }
 
 /*Фильтр Питание*/
 
-.power-filter-radio input[type="radio"] {
+.power-filter input[type="radio"] {
   display: none;
 }
 
-.power-filter-radio {
+.power-filter label {
   display: block;
   position: relative;
   margin-top: 10px;
@@ -1722,7 +1724,7 @@ input[type="search"]:-ms-input-placeholder {
   cursor: pointer;
 }
 
-.power-filter-radio input[type="radio"] + .radio-indicator::before {
+.power-filter label::before {
   content: "";
   position: absolute;
   top: -3px;
@@ -1733,59 +1735,40 @@ input[type="search"]:-ms-input-placeholder {
   border-radius: 50%;
 }
 
-.power-filter-radio input[type="radio"]:disabled + .radio-indicator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  border: 3px solid #e9e9e9;
-  border-radius: 50%;
-}
-
-.power-filter-radio:hover input[type="radio"]:disabled + .radio-indicator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  border: 3px solid #e9e9e9;
-  border-radius: 50%;
-}
-
-.power-filter-radio:hover input[type="radio"] + .radio-indicator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  border: 3px solid #b5b5b5;
-  border-radius: 50%;
-}
-
-.power-filter-radio input[type="radio"]:checked + .radio-indicator::after {
+.power-filter label::after {
   content: "";
   position: absolute;
   top: 4px;
   left: 7px;
   width: 8px;
   height: 8px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+#battery + label[for="battery"]:hover::before,
+#grid + label[for="grid"]:hover::before {
+  border-color: #b5b5b5;
+}
+
+#battery:disabled + label[for="battery"]::before,
+#grid:disabled + label[for="grid"]::before {
+  border-color: #e9e9e9;
+}
+
+#battery:checked + label[for="battery"]::after,
+#grid:checked + label[for="grid"]::after {
   background-color: #c1c1c1;
-  border-radius: 50%;
 }
 
-.power-filter-radio:hover input[type="radio"]:checked + .radio-indicator::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 7px;
-  width: 8px;
-  height: 8px;
+#battery:checked + label[for="battery"]:hover::after,
+#grid:checked + label[for="grid"]:hover::after {
   background-color: #b5b5b5;
-  border-radius: 50%;
+}
+
+#battery:disabled:checked + label[for="battery"]::after,
+#grid:disabled:checked + label[for="grid"]::after {
+  background-color: #e9e9e9;
 }
 
 .filter-btn {
@@ -1796,12 +1779,17 @@ input[type="search"]:-ms-input-placeholder {
   text-transform: uppercase;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
-  border-radius: 4px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
 .filter-btn:hover {
-  border-color: #c1c1c1;
+  border-color: #bdc6ca;
+}
+
+.filter-btn:active {
+  color: #000000;
+  border: 1px solid #ee3643;
 }
 /*Фильтр*/
 
