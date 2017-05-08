@@ -118,45 +118,23 @@
 
               <fieldset class="brand-filter">
                 <legend>Производители:</legend>
-                <label class="brand-filter-checkbox">
-                  <input type="checkbox" name="Bosch" checked>
-                  <span class="checkbox-indicator"></span>
-                  Bosch
-                </label>
-                <label class="brand-filter-checkbox">
-                  <input type="checkbox" name="Interskol">
-                  <span class="checkbox-indicator"></span>
-                  Интерскол
-                </label>
-                <label class="brand-filter-checkbox">
-                  <input type="checkbox" name="Makita" checked>
-                  <span class="checkbox-indicator"></span>
-                  Makita
-                </label>
-                <label class="brand-filter-checkbox">
-                  <input type="checkbox" name="Dewalt">
-                  <span class="checkbox-indicator"></span>
-                  Dewalt
-                </label>
-                <label class="brand-filter-checkbox">
-                  <input type="checkbox" name="Hitachi" disabled>
-                  <span class="checkbox-indicator"></span>
-                  Hitachi
-                </label>
+                <input id="bosch" type="checkbox" name="bosch" checked>
+                <label for="bosch">Bosch</label>
+                <input id="interskol" type="checkbox" name="interskol">
+                <label for="interskol">Интерскол</label>
+                <input id="makita" type="checkbox" name="makita" checked>
+                <label for="makita">Makita</label>
+                <input id="dewalt" type="checkbox" name="dewalt">
+                <label for="dewalt">Dewalt</label>
+                <input id="hitachi" type="checkbox" name="hitachi">
+                <label for="hitachi">Hitachi</label>
               </fieldset>
-
               <fieldset class="power-filter">
                 <legend>Питание:</legend>
-                <label class="power-filter-radio">
-                  <input type="radio" name="groups" value="battery" checked>
-                  <span class="radio-indicator"></span>
-                  Аккумуляторные
-                </label>
-                <label class="power-filter-radio">
-                  <input type="radio" name="groups" value="grid">
-                  <span class="radio-indicator"></span>
-                  Сетевые
-                </label>
+                <input id="battery" type="radio" name="battery" value="battery" checked>
+                <label for="battery" class="power-filter-radio">Аккумуляторные</label>
+                <input id="grid" type="radio" name="grid" value="grid">
+                <label for="grid" class="power-filter-radio">Сетевые</label>
               </fieldset>
               <button class="filter-btn" type="submit">Показать</button>
             </form>
