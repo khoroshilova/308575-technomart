@@ -116,41 +116,49 @@
                 </div>
               </fieldset>
 
-              <fieldset class="brend-filter">
+              <fieldset class="brand-filter">
                 <legend>Производители:</legend>
-                <label for="Bosch">
-                  <input id="Bosch" type="checkbox" name="Bosch" checked>
+                <label class="brand-filter-checkbox">
+                  <input type="checkbox" name="Bosch" checked>
+                  <span class="checkbox-indicator"></span>
                   Bosch
                 </label>
-                <label for="Interskol">
-                  <input id="Interskol" type="checkbox" name="Interskol">
+                <label class="brand-filter-checkbox">
+                  <input type="checkbox" name="Interskol">
+                  <span class="checkbox-indicator"></span>
                   Интерскол
                 </label>
-                <label for="Makita">
-                  <input id="Makita" type="checkbox" name="Makita" checked>
+                <label class="brand-filter-checkbox">
+                  <input type="checkbox" name="Makita" checked>
+                  <span class="checkbox-indicator"></span>
                   Makita
                 </label>
-                <label for="Dewalt">
-                  <input id="Dewalt" type="checkbox" name="Dewalt">
+                <label class="brand-filter-checkbox">
+                  <input type="checkbox" name="Dewalt">
+                  <span class="checkbox-indicator"></span>
                   Dewalt
                 </label>
-                <label for="Hitachi">
-                  <input id="Hitachi" type="checkbox" name="Hitachi">
+                <label class="brand-filter-checkbox">
+                  <input type="checkbox" name="Hitachi" disabled>
+                  <span class="checkbox-indicator"></span>
                   Hitachi
                 </label>
               </fieldset>
+
               <fieldset class="power-filter">
                 <legend>Питание:</legend>
-                <label for="battery">
-                  <input id="battery" type="radio" name="groups" value="battery" checked>
+                <label class="power-filter-radio">
+                  <input type="radio" name="groups" value="battery" checked>
+                  <span class="radio-indicator"></span>
                   Аккумуляторные
                 </label>
-                <label for="grid">
-                  <input id="grid" type="radio" name="groups" value="grid">
+                <label class="power-filter-radio">
+                  <input type="radio" name="groups" value="grid">
+                  <span class="radio-indicator"></span>
                   Сетевые
                 </label>
               </fieldset>
-              <input type="submit" value="Показать">
+              <button class="filter-btn" type="submit">Показать</button>
             </form>
           </aside>
 
