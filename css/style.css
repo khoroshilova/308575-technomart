@@ -1029,7 +1029,6 @@ input[type="search"]:-ms-input-placeholder {
 /* Слайдер низ */
 
 .block-info {
-  /*padding-top: 55px;*/
   font-family: "Cuprum", sans-serif;
   color: #000000;
 }
@@ -1803,7 +1802,6 @@ input[type="search"]:-ms-input-placeholder {
   border: 1px solid #ee3643;
 }
 /*Фильтр*/
-
 
 .catalog-content {
   float: right;
