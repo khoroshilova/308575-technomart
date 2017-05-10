@@ -128,7 +128,7 @@ input[type="search"]:-ms-input-placeholder {
 
 .top-menu {
   float: right;
-  width: 450px;
+  max-width: 450px;
   font-size: 0;
 }
 
@@ -159,6 +159,10 @@ input[type="search"]:-ms-input-placeholder {
 .top-menu-btn-basket:active {
   background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.top-menu-btn-basket-active {
+  background-color: #ee3643;
 }
 
 .top-menu-btn::before {
@@ -199,8 +203,8 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .top-menu-btn-order {
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #63a63e;
 }
 
@@ -324,6 +328,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .navigation {
+  max-width: 940px;
   margin: 0;
   padding: 0;
   list-style: none;
