@@ -1967,16 +1967,17 @@ input[type="search"]:-ms-input-placeholder {
 
 .modal-content-write-us {
   position: fixed;
-  /*display: none;*/
+  display: none;
   top: 50%;
-  right: 50%;
-  width: 620px;
-  margin-top: -190px;
-  margin-right: -310px;
+  left: 50%;
+  width: 460px;
+  transform: translate(-50%, -50%);
+  padding: 48px 80px 34px 80px;
   color: #000000;
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.7);
+  box-shadow: inset 0 -114px 0 0 #f1f1f1;
   z-index: 40;
 }
 
@@ -2011,24 +2012,21 @@ input[type="search"]:-ms-input-placeholder {
   transform: rotate(-45deg);
 }
 
-.modal-content-write-us-top {
-  width: 460px;
-  padding: 50px 80px 34px 80px;
+.write-us-form-user {
+  display: inline-block;
+  margin-bottom: 21px;
 }
 
-.write-us-form span {
-  display: inline-block;
-  width: 220px;
-  margin-bottom: 10px;
+.write-us-form-user label {
+  display: block;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 18px;
 }
 
-.write-us-form input {
-  display: inline-block;
+.write-us-form-user input {
   vertical-align: top;
   width: 200px;
-  margin-bottom: 20px;
   padding: 8px 0 8px 15px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
@@ -2041,6 +2039,7 @@ input[type="search"]:-ms-input-placeholder {
 .write-us-form textarea {
   display: block;
   width: 440px;
+  margin-bottom: 52px;
   padding: 8px 0 76px 15px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
@@ -2102,11 +2101,6 @@ input[type="search"]:-ms-input-placeholder {
   color: #999999;
 }
 
-.modal-content-write-us-bottom {
-  background-color: #f1f1f1;
-  padding: 37px 80px;
-}
-
 .write-us-btn {
   width: 460px;
   padding: 10px 0;
@@ -2140,8 +2134,7 @@ input[type="search"]:-ms-input-placeholder {
   left: 50%;
   width: 940px;
   height: 446px;
-  margin-top: -320px;
-  margin-left: -470px;
+  transform: translate(-50%, -50%);
   background: url("../img/map-big.png");
   box-shadow: 0 0 16px 8px rgba(35, 31, 32, 0.5);
   z-index: 40;
@@ -2154,35 +2147,26 @@ input[type="search"]:-ms-input-placeholder {
   display: none;
   top: 50%;
   left: 50%;
-  margin-top: -30px;
-  margin-left: -300px;
-  width: 620px;
+  width: 460px;
+  transform: translate(-50%, -50%);
+  padding: 50px 80px 37px 80px;
   color: #000000;
-  background-color: #ffffff;
+  background: #ffffff url("../img/product-in-basket.png") no-repeat 80px 50px;
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.7);
+  box-shadow: inset 0 -114px 0 0 #f1f1f1;
   z-index: 40;
 }
 
-.modal-content-basket-top {
-  width: 460px;
-  padding: 50px 80px 70px 80px;
-  background: url("../img/product-in-basket.png") no-repeat 80px 50px;
-}
-
-.modal-content-basket-top span {
+.modal-content-basket span {
   display: inline-block;
   vertical-align: top;
   margin-top: 25px;
   margin-left: 100px;
+  margin-bottom: 107px;
   font-size: 30px;
   line-height: 18px;
   color: #000000;
-}
-
-.modal-content-basket-bottom {
-  background-color: #f1f1f1;
-  padding: 37px 80px;
 }
 
 .modal-content-basket-btn {
