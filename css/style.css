@@ -344,6 +344,7 @@ input[type="search"]:-ms-input-placeholder {
   padding: 0;
   list-style: none;
   font-size: 0;
+  background-color: #32425c;
 }
 
 .navigation li {
@@ -367,7 +368,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .navigation li:last-child a {
-  padding-right: 55px;
+  padding-right: 53px;
 }
 
 .navigation a:hover {
