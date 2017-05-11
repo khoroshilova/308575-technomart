@@ -2102,7 +2102,7 @@ input[type="search"]:-ms-input-placeholder {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-  color: #ffffff;
+  color: #000000;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
@@ -2119,7 +2119,7 @@ input[type="search"]:-ms-input-placeholder {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-  color: #ffffff;
+  color: #000000;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
