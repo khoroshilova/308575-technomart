@@ -4,8 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -21,7 +20,6 @@
           <div class="block-search">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
               <input type="search" name="search" placeholder="Поиск:">
-              <button class="search-btn" type="submit"></button>
             </form>
           </div>
           <div class="top-menu">
@@ -33,18 +31,18 @@
       </div>
 
       <div class="shop-info container clearfix">
-        <section class="about-shop">
-          <p>Интернет-магазин строительных материалов<br>
-            и инструментов для ремонта</p>
-        </section>
-        <section class="shop-contacts">
+        <div class="about-shop">
+          <p>Интернет-магазин строительных материалов</p>
+          <p>и инструментов для ремонта</p>
+        </div>
+        <div class="shop-contacts">
           <span class="shop-contacts-phone">+7 (812) 555-05-55</span>
           <span class="shop-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-        </section>
-        <section class="user-block">
+        </div>
+        <div class="user-block">
           <a class="user-block-btn user-block-btn-login" href="#">Войти</a>
           <a class="user-block-btn user-block-btn-registration" href="#">Регистрация</a>
-        </section>
+        </div>
       </div>
 
       <nav class="main-navigation container">
@@ -97,8 +95,8 @@
               <div class="slider">
                 <input type="radio" id="btn-1" name="toggle" checked>
                 <input type="radio" id="btn-2" name="toggle">
-                <button class="arrow arrow-prev"></button>
-                <button class="arrow arrow-next"></button>
+                <label for="btn-1" class="arrow arrow-prev"></label>
+                <label for="btn-2" class="arrow arrow-next"></label>
                 <div class="slider-controls">
                   <label for="btn-1"></label>
                   <label for="btn-2"></label>
@@ -234,28 +232,21 @@
             <input type="radio" id="guarantee" name="toggle1">
             <input type="radio" id="credit" name="toggle1">
             <div class="service-slider-controls">
-              <label for="shipping">
-                <span>Доставка</span>
-              </label>
-              <label for="guarantee">
-                <span>Гарантии</span>
-              </label>
-              <label for="credit">
-                <span>Кредит</span>
-              </label>
+              <label for="shipping">Доставка</label>
+              <label for="guarantee">Гарантии</label>
+              <label for="credit">Кредит</label>
             </div>
             <div class="service-slider-slides">
               <div class="service-slider-slide">
                 <h2 class="service-slider-title">Доставка</h2>
                 <p class="service-slider-text">
                   Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно!<br>
-                  Ведь мы неплохо заработаем,<br>
+                  к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!
                 </p>
               </div>
               <div class="service-slider-slide">
-                <h2 class="service-slider-title">Гарантии</h2>
+                <h2 class="service-slider-title">Гарантия</h2>
                 <p class="service-slider-text">
                   Если купленный у нас товар поломается или заискрит,<br>
                   а также в случае пожара, спровоцированного его возгоранием, вы всегда сможете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
@@ -302,7 +293,7 @@
             <a class="map" target="_blank" href="https://goo.gl/maps/HJVAi44prT52">
               <img src="img/map.png" width="300" height="158" alt="Карта">
             </a>
-            <a class="btn-write-us" href="writeus.html">Заблудились? Пишите нам!</a>
+            <a class="btn-write-us" href="writeus.html">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
