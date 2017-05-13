@@ -902,6 +902,7 @@ body {
   float: left;
   width: 240px;
   margin-top: 44px;
+  margin-bottom: 103px;
 }
 
 .service-slider::before {
