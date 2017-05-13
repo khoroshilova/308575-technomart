@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7cPT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -45,25 +45,25 @@
       </div>
       <nav class="main-navigation container">
         <ul class="navigation">
-          <li>
+          <li class="navigation-point">
             <a href="index.html">Главная</a>
           </li>
-          <li>
+          <li class="navigation-point">
             <a href="#">Компания</a>
           </li>
-          <li>
+          <li class="navigation-point">
             <a href="#">Каталог</a>
           </li>
-          <li>
+          <li class="navigation-point">
             <a href="#">Новости</a>
           </li>
-          <li>
+          <li class="navigation-point">
             <a href="#">Спецпредложения</a>
           </li>
-          <li>
+          <li class="navigation-point">
             <a href="#">Доставка</a>
           </li>
-          <li>
+          <li class="navigation-point">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -102,22 +102,22 @@
               </fieldset>
               <fieldset class="brand-filter">
                 <legend>Производители:</legend>
-                <input id="bosch" type="checkbox" name="bosch" checked>
+                <input class="brand-filter-checkbox" id="bosch" type="checkbox" name="bosch" checked>
                 <label for="bosch">Bosch</label>
-                <input id="interskol" type="checkbox" name="interskol">
+                <input class="brand-filter-checkbox" id="interskol" type="checkbox" name="interskol">
                 <label for="interskol">Интерскол</label>
-                <input id="makita" type="checkbox" name="makita" checked>
+                <input class="brand-filter-checkbox" id="makita" type="checkbox" name="makita" checked>
                 <label for="makita">Makita</label>
-                <input id="dewalt" type="checkbox" name="dewalt">
+                <input class="brand-filter-checkbox" id="dewalt" type="checkbox" name="dewalt">
                 <label for="dewalt">Dewalt</label>
-                <input id="hitachi" type="checkbox" name="hitachi">
+                <input class="brand-filter-checkbox" id="hitachi" type="checkbox" name="hitachi">
                 <label for="hitachi">Hitachi</label>
               </fieldset>
               <fieldset class="power-filter">
                 <legend>Питание:</legend>
-                <input id="battery" type="radio" name="groups" value="battery" checked>
+                <input class="power-filter-radio" id="battery" type="radio" name="groups" value="battery" checked>
                 <label for="battery" class="power-filter-radio">Аккумуляторные</label>
-                <input id="grid" type="radio" name="groups" value="grid">
+                <input class="power-filter-radio" id="grid" type="radio" name="groups" value="grid">
                 <label for="grid" class="power-filter-radio">Сетевые</label>
               </fieldset>
               <button class="filter-btn" type="submit">Показать</button>
@@ -130,8 +130,8 @@
               <a class="sorting-btn" href="#">По типу</a>
               <a class="sorting-btn" href="#">По функционалу</a>
               <div class="sorter-controls">
-                <a class="sorter-up sorter-up-active">По возростанию</a>
-                <a class="sorter-down">По убыванию</a>
+                <a class="sorter-up sorter-up-active" href="#">По возростанию</a>
+                <a class="sorter-down" href="#">По убыванию</a>
               </div>
             </div>
             <section class="catalog-items">
