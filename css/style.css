@@ -334,14 +334,14 @@ body {
   background-color: #32425c;
 }
 
-.navigation-point {
+.navigation-item {
   display: inline-block;
   vertical-align: top;
   font-size: 17px;
   line-height: 17px;
 }
 
-.navigation-point a {
+.navigation-item a {
   display: block;
   padding: 20px 24px 20px 37px;
   color: #ffffff;
@@ -350,19 +350,19 @@ body {
   border-bottom: 3px solid #293449;
 }
 
-.navigation-point:first-child a {
+.navigation-item:first-child a {
   padding-left: 51px;
 }
 
-.navigation-point:last-child a {
+.navigation-item:last-child a {
   padding-right: 53px;
 }
 
-.navigation-point a:hover {
+.navigation-item a:hover {
   background-color: #293449;
 }
 
-.navigation-point a:active {
+.navigation-item a:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
