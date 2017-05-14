@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7cPT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header header">
@@ -278,10 +278,10 @@
               Вы можете забрать товар сами,<br>
               заехав в наш офис:
             </p>
-            <a class="map" target="_blank" href="https://goo.gl/maps/HJVAi44prT52">
+            <a class="map js-open-map" target="_blank" href="https://goo.gl/maps/HJVAi44prT52">
               <img src="img/map.png" width="300" height="158" alt="Карта">
             </a>
-            <a class="btn-write-us" href="writeus.html">Заблудились? Напишите нам!</a>
+            <a class="btn-write-us" href="#">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -373,7 +373,14 @@
     </div>
     <div class="modal-content-map">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <div id="google-map"></div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5442945247619!2d30.3216987!3d59.9397036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e25a758db%3A0x35ebabad670cbd38!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDksINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1494719438355"
+        width="940"
+        height="446"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen></iframe>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
