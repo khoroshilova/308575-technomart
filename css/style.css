@@ -2235,6 +2235,7 @@ body {
 
 .modal-content-map-show {
   display: block;
+  animation: crawl 0.8s;
 }
 
 .modal-content-basket {
