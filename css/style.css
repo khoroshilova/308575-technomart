@@ -2012,6 +2012,36 @@ body {
   color: #000000;
 }
 
+@keyframes crawl {
+  0%   {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-55%, -50%);
+  }
+  50%  {
+    transform: translate(-45%, -50%);
+  }
+  75%  {
+    transform: translate(-55%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(-50%, -50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-50%, -52%);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(-50%, -48%);
+  }
+}
+
 .modal-content-write-us {
   position: fixed;
   display: none;
@@ -2025,6 +2055,15 @@ body {
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.7), inset 0 -114px 0 0 #f1f1f1;
   z-index: 40;
+}
+
+.modal-content-write-us-show {
+  display: block;
+  animation: crawl 0.8s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -2194,6 +2233,10 @@ body {
   z-index: 40;
 }
 
+.modal-content-map-show {
+  display: block;
+}
+
 .modal-content-basket {
   position: fixed;
   display: none;
@@ -2207,6 +2250,11 @@ body {
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.7), inset 0 -114px 0 0 #f1f1f1;
   z-index: 40;
+}
+
+.modal-content-basket-show {
+  display: block;
+  animation: crawl 0.8s;
 }
 
 .modal-content-basket span,
