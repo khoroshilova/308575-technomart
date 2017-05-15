@@ -14,12 +14,12 @@ if (writeUsLink) {
     event.preventDefault();
     writeUsPopup.classList.add("modal-content-show");
 
-  if (storage) {
-    userName.value = storage;
-    userMail.focus();
-  } else {
-    userName.focus();
-  }
+    if (storage) {
+      userName.value = storage;
+      userMail.focus();
+    } else {
+      userName.focus();
+    }
   });
 }
 
@@ -38,7 +38,7 @@ if (form) {
       writeUsPopup.classList.remove("modal-error");
       writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
       writeUsPopup.classList.add("modal-error");
-  } else {
+    } else {
       localStorage.setItem("userName", userName.value);
     }
   });
@@ -88,12 +88,14 @@ var buyPopup = document.querySelector(".modal-content-basket");
 if (buyPopup) {
   var buyClose = buyPopup.querySelector(".modal-content-close");
 }
+
 if (buyClose) {
   buyClose.addEventListener("click", function (event) {
     event.preventDefault();
     buyPopup.classList.remove("modal-content-show");
   });
 }
+
 if (buyLinks) {
   for (var i = 0; i < buyLinks.length; i++) {
     buyLinks[i].addEventListener("click", function (event) {
